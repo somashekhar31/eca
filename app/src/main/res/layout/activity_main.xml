@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width='match_parent'
+    android:layout_height='match_parent'
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:text="FEEDBACK FORM"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/session"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/college"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/SessionName"
+                    android:prompt="@string/sessionprompt"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/college"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/yos"
+                    android:prompt="@string/sessionnoprompt"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/yos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yearofjoining"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/yos"
+                    android:prompt="@string/yospromp"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/branch"
+                    android:layout_width="137dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yos"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/Branch"
+                    android:prompt="@string/branchpromp"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/section"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/college"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/Section"
+                    android:prompt="@string/sectionpromp"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/tut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yearofjoining"
+                    android:layout_marginBottom="40dp"
+                    android:entries="@array/Tutor"
+                    android:prompt="@string/tutorprompt"
+                    android:spinnerMode="dialog" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rating1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#7ff000"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="presentation"
+                    android:textColor="#000" />
+
+                <RatingBar
+                    android:id="@+id/presentation1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="1.0"
+                    android:theme="@style/RatingBar" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/rating2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#7ff000"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Doubt Clarification"
+                    android:textColor="#000" />
+
+                <RatingBar
+                    android:id="@+id/doubts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="1.0"
+                    android:theme="@style/RatingBar" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="50dp">
+
+                <EditText
+                    android:id="@+id/suggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/section"
+                    android:hint="Any Suggestions"
+                    android:inputType="textLongMessage"
+                    android:paddingTop="20dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Submit" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="368dp"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:background="#7fff00"
+            android:text="SNIST ECA CLUB"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp" />
+    </RelativeLayout>
+</ScrollView>

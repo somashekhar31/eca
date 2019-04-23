@@ -1,0 +1,50 @@
+<resources>
+<string name="app_name">eca</string>
+    <string name="yospromp">Select your year</string>
+    <string name="branchpromp">Select your branch</string>
+    <string name="sectionpromp">Select your section</string>
+    <string name="sessionprompt">Select the session name</string>
+    <string name="tutorprompt">Select the tutor</string>
+    <string name="sessionnoprompt">Select the Session number</string>
+    <string-array name="yos">
+
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+    </string-array>
+    <string-array name="Branch">
+
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>MECH</item>
+        <item>BIO-TECH</item>
+        <item>CIVIL</item>
+        <item>IT</item>
+        <item>ECM</item>
+        <item>MECH-TRON</item>
+    </string-array>
+    <string-array name="Section">
+
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+    </string-array>
+    <string-array name="Tutor">
+
+        <item>Srimath</item>
+        <item>Bhaswanth</item>
+        <item>Bharath</item>
+    </string-array>
+    <string-array name="SessionName">
+
+        <item>Python with data structures</item>
+        <item>DataScience</item>
+        <item>Android</item>
+    </string-array>
+
+</resources>

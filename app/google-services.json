@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738434465801",
+    "firebase_url": "https://eca-app-6afbd.firebaseio.com",
+    "project_id": "eca-app-6afbd",
+    "storage_bucket": "eca-app-6afbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738434465801:android:10af1753957c4078",
+        "android_client_info": {
+          "package_name": "com.google.eca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738434465801-1p30oaspbd95ho3ec5v6hciv1rh6e6ek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.eca",
+            "certificate_hash": "0434c64b1b64939b6a082584a281bd1744a5ed50"
+          }
+        },
+        {
+          "client_id": "738434465801-cr8falg07ar54cfldg6um9qs787ph1cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkgNHPr2pYc8qpkWXl9h8h7XJqzYJkX74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738434465801-cr8falg07ar54cfldg6um9qs787ph1cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
